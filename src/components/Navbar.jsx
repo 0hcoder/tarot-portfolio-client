@@ -60,14 +60,12 @@ export default function Navbar() {
           {isMenuOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
         </button>
       </nav>
-
-     
       <div
         id="mobile-menu"
-        className={`absolute top-[50%] left-[50%] w-full bg-green-300 flex flex-col items-center gap-4 py-5 shadow-md transition-transform duration-300 md:hidden ${
+        className={`absolute top-[8.5%] right-[0.5%] w-fit z-10 bg-green-300 flex flex-col items-center gap-1 p-4 rounded-md shadow-md ease-out transition-transform duration-500 md:hidden ${
           isMenuOpen
-            ? "translate-x-[-50%] translate-y-[-50%] opacity-100"
-            : "translate-x-[-50%] translate-y-[-100%] opacity-0 hidden"
+            ? "opacity-100"
+            : "opacity-0 hidden"
         } `}
       >
         <a
